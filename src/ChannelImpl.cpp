@@ -52,7 +52,9 @@
 #include "SimpleAmqpClient/ConsumerTagNotFoundException.h"
 #include "SimpleAmqpClient/TableImpl.h"
 
+#ifndef BROKER_HEARTBEAT
 #define BROKER_HEARTBEAT 0
+#endif  // !BROKER_HEARTBEAT
 
 namespace AmqpClient {
 
